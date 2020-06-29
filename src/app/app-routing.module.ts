@@ -56,6 +56,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
   },
   {
+    path: 'list',
+    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+  },
+  {
     path: "**",
     redirectTo: 'home'
   }
