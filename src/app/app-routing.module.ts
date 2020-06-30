@@ -64,6 +64,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/list-reorder/list-reorder.module').then( m => m.ListReorderPageModule)
   },
   {
+    path: 'loading',
+    loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule)
+  },
+  {
     path: "**",
     redirectTo: 'home'
   }
