@@ -96,10 +96,13 @@ const routes: Routes = [
     loadChildren: () => import('./pages/slides/slides.module').then( m => m.SlidesPageModule)
   },
   {
+    path: 'tabs',
+    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
     path: "**",
     redirectTo: 'home'
-  },
-  
+  }
   
 ];
 
