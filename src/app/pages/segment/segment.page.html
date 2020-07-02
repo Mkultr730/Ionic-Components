@@ -1,0 +1,35 @@
+<app-header title="Segment"></app-header>
+
+
+<ion-toolbar>
+  <ion-segment (ionChange)="segmentChanged($event)" color="tertiary" value="All">
+    <ion-segment-button value="All" >
+      <ion-label>All</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="Marvel">
+      <ion-label>Marvel</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="DC">
+      <ion-label>DC</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-toolbar>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let heroe of (superHeroes | async) | filter: publisher:'publisher'"
+              class="animated fadeIn fast">
+      <ion-label>
+        <h3>{{ heroe.superheroe }} <small> {{ heroe.alter_ego }} </small> </h3>
+        <p>
+          {{ heroe.first_appearance }}
+        </p>
+      </ion-label>
+      <ion-label slot="end" class="ion-text-right">
+        {{ heroe.publisher }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
