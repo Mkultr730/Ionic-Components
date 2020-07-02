@@ -76,6 +76,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
   },
   {
+    path: 'progress-bar',
+    loadChildren: () => import('./pages/progress-bar/progress-bar.module').then( m => m.ProgressBarPageModule)
+  },
+  {
     path: "**",
     redirectTo: 'home'
   }
