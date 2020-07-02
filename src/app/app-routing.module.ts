@@ -92,9 +92,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/segment/segment.module').then( m => m.SegmentPageModule)
   },
   {
+    path: 'slides',
+    loadChildren: () => import('./pages/slides/slides.module').then( m => m.SlidesPageModule)
+  },
+  {
     path: "**",
     redirectTo: 'home'
-  }
+  },
+  
   
 ];
 
