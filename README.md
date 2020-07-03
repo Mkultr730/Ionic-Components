@@ -1,4 +1,4 @@
-# Foobar
+# Ionic Components
 
 This repository was made with the purpose of having an overview of the Ionic components and their operation.
 
