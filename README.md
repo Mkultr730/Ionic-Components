@@ -5,8 +5,8 @@ This repository was made with the purpose of having an overview of the Ionic com
 ## Setup
 
 ```bash
-npm install
 npm install -g @ionic/cli
+npm install
 ```
 
 ## Usage
